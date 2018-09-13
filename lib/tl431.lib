@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Tl431
+#
+DEF Tl431 D 0 100 Y Y 1 F N
+F0 "D" 485 295 60 H V C CNN
+F1 "Tl431" 215 290 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 0 0 415 335 0 1 0 N
+X Vref 1 85 -200 200 U 50 50 1 1 I
+X GND 2 200 -200 200 U 50 50 1 1 I
+X Out 3 320 -200 200 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,1455 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:StepDown-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 11693 16535 portrait
+encoding utf-8
+Sheet 1 1
+Title "LiFePo4 powerbank"
+Date "30.12.2016"
+Rev ""
+Comp "LFA"
+Comment1 ""
+Comment2 "A.G.Ivanov"
+Comment3 "A.G.Ivanov"
+Comment4 "A.G.Ivanov"
+$EndDescr
+$Comp
+L LM2576 D1
+U 1 1 58667880
+P 6530 1120
+F 0 "D1" H 7395 1595 60  0000 C CNN
+F 1 "LM2576" H 6920 1560 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1" H 6530 1120 60  0001 C CNN
+F 3 "" H 6530 1120 60  0000 C CNN
+	1    6530 1120
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 58667AF3
+P 6175 1825
+F 0 "C1" H 6200 1925 50  0000 L CNN
+F 1 "CP" H 6200 1725 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 6213 1675 50  0001 C CNN
+F 3 "" H 6175 1825 50  0000 C CNN
+	1    6175 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 58667BB4
+P 8215 1845
+F 0 "C2" H 8240 1945 50  0000 L CNN
+F 1 "CP" H 8240 1745 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 8253 1695 50  0001 C CNN
+F 3 "" H 8215 1845 50  0000 C CNN
+	1    8215 1845
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 586681F2
+P 7855 1635
+F 0 "L1" V 7805 1635 50  0000 C CNN
+F 1 "INDUCTOR" V 7955 1635 50  0000 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_8x16mm_Vertical" H 7855 1635 50  0001 C CNN
+F 3 "" H 7855 1635 50  0000 C CNN
+	1    7855 1635
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky D13
+U 1 1 58668E07
+P 6815 1845
+F 0 "D13" H 6815 1945 50  0000 C CNN
+F 1 "D_Schottky" H 6815 1745 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-201AD_P15.24mm_Horizontal" H 6815 1845 50  0001 C CNN
+F 3 "" H 6815 1845 50  0000 C CNN
+	1    6815 1845
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-Powerbank_Automative P1
+U 1 1 586694B1
+P 10190 1555
+F 0 "P1" H 10390 1355 50  0000 C CNN
+F 1 "USB_A" H 10140 1755 50  0000 C CNN
+F 2 "Connect:USB_A" V 10140 1455 50  0001 C CNN
+F 3 "" V 10140 1455 50  0000 C CNN
+	1    10190 1555
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 58669860
+P 8620 1370
+F 0 "R13" V 8700 1370 50  0000 C CNN
+F 1 "R" V 8620 1370 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8550 1370 50  0001 C CNN
+F 3 "" H 8620 1370 50  0000 C CNN
+	1    8620 1370
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 58669A23
+P 8620 1745
+F 0 "R23" V 8700 1745 50  0000 C CNN
+F 1 "R" V 8620 1745 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8550 1745 50  0001 C CNN
+F 3 "" H 8620 1745 50  0000 C CNN
+	1    8620 1745
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 58669D0E
+P 9385 1335
+F 0 "R11" V 9465 1335 50  0000 C CNN
+F 1 "R" V 9385 1335 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9315 1335 50  0001 C CNN
+F 3 "" H 9385 1335 50  0000 C CNN
+	1    9385 1335
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 58669D14
+P 9385 1710
+F 0 "R21" V 9465 1710 50  0000 C CNN
+F 1 "R" V 9385 1710 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9315 1710 50  0001 C CNN
+F 3 "" H 9385 1710 50  0000 C CNN
+	1    9385 1710
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 58669F6D
+P 9560 1335
+F 0 "R12" V 9640 1335 50  0000 C CNN
+F 1 "R" V 9560 1335 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9490 1335 50  0001 C CNN
+F 3 "" H 9560 1335 50  0000 C CNN
+	1    9560 1335
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 58669F73
+P 9560 1710
+F 0 "R22" V 9640 1710 50  0000 C CNN
+F 1 "R" V 9560 1710 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9490 1710 50  0001 C CNN
+F 3 "" H 9560 1710 50  0000 C CNN
+	1    9560 1710
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q3
+U 1 1 586C849C
+P 5715 2560
+F 0 "Q3" H 5915 2635 50  0000 L CNN
+F 1 "2SC1815" H 5915 2560 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide_Oval_Reverse" H 5915 2485 50  0001 L CIN
+F 3 "" H 5715 2560 50  0000 L CNN
+	1    5715 2560
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D14
+U 1 1 586C8D5C
+P 5445 2275
+F 0 "D14" H 5445 2375 50  0000 C CNN
+F 1 "ZENER" H 5445 2175 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P10.16mm_Horizontal" H 5445 2275 50  0001 C CNN
+F 3 "" H 5445 2275 50  0000 C CNN
+	1    5445 2275
+	0    1    1    0   
+$EndComp
+$Comp
+L R R24
+U 1 1 586C939F
+P 5445 1860
+F 0 "R24" V 5525 1860 50  0000 C CNN
+F 1 "15k" V 5445 1860 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5375 1860 50  0001 C CNN
+F 3 "" H 5445 1860 50  0000 C CNN
+	1    5445 1860
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R40
+U 1 1 586C9A5E
+P 5445 2765
+F 0 "R40" V 5525 2765 50  0000 C CNN
+F 1 "15k" V 5445 2765 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5375 2765 50  0001 C CNN
+F 3 "" H 5445 2765 50  0000 C CNN
+	1    5445 2765
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 586C9F27
+P 5815 1860
+F 0 "R25" V 5895 1860 50  0000 C CNN
+F 1 "R" V 5815 1860 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5745 1860 50  0001 C CNN
+F 3 "" H 5815 1860 50  0000 C CNN
+	1    5815 1860
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2576 D39
+U 1 1 586D6360
+P 6410 4365
+F 0 "D39" H 7275 4840 60  0000 C CNN
+F 1 "LM2576" H 6800 4805 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1" H 6410 4365 60  0001 C CNN
+F 3 "" H 6410 4365 60  0000 C CNN
+	1    6410 4365
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 586D6366
+P 6055 5070
+F 0 "C3" H 6080 5170 50  0000 L CNN
+F 1 "CP" H 6080 4970 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 6093 4920 50  0001 C CNN
+F 3 "" H 6055 5070 50  0000 C CNN
+	1    6055 5070
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C4
+U 1 1 586D636C
+P 8095 5090
+F 0 "C4" H 8120 5190 50  0000 L CNN
+F 1 "CP" H 8120 4990 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 8133 4940 50  0001 C CNN
+F 3 "" H 8095 5090 50  0000 C CNN
+	1    8095 5090
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 586D6372
+P 7735 4880
+F 0 "L2" V 7685 4880 50  0000 C CNN
+F 1 "INDUCTOR" V 7835 4880 50  0000 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_8x16mm_Vertical" H 7735 4880 50  0001 C CNN
+F 3 "" H 7735 4880 50  0000 C CNN
+	1    7735 4880
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky D41
+U 1 1 586D6378
+P 6695 5090
+F 0 "D41" H 6695 5190 50  0000 C CNN
+F 1 "D_Schottky" H 6695 4990 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-201AD_P15.24mm_Horizontal" H 6695 5090 50  0001 C CNN
+F 3 "" H 6695 5090 50  0000 C CNN
+	1    6695 5090
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-Powerbank_Automative P10
+U 1 1 586D637E
+P 10070 4800
+F 0 "P10" H 10270 4600 50  0000 C CNN
+F 1 "USB_A" H 10020 5000 50  0000 C CNN
+F 2 "Connect:USB_A" V 10020 4700 50  0001 C CNN
+F 3 "" V 10020 4700 50  0000 C CNN
+	1    10070 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R68
+U 1 1 586D6384
+P 8500 4615
+F 0 "R68" V 8580 4615 50  0000 C CNN
+F 1 "R" V 8500 4615 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8430 4615 50  0001 C CNN
+F 3 "" H 8500 4615 50  0000 C CNN
+	1    8500 4615
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R75
+U 1 1 586D638A
+P 8500 4990
+F 0 "R75" V 8580 4990 50  0000 C CNN
+F 1 "R" V 8500 4990 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8430 4990 50  0001 C CNN
+F 3 "" H 8500 4990 50  0000 C CNN
+	1    8500 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R66
+U 1 1 586D6390
+P 9265 4580
+F 0 "R66" V 9345 4580 50  0000 C CNN
+F 1 "R" V 9265 4580 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9195 4580 50  0001 C CNN
+F 3 "" H 9265 4580 50  0000 C CNN
+	1    9265 4580
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R69
+U 1 1 586D6396
+P 9265 4955
+F 0 "R69" V 9345 4955 50  0000 C CNN
+F 1 "R" V 9265 4955 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9195 4955 50  0001 C CNN
+F 3 "" H 9265 4955 50  0000 C CNN
+	1    9265 4955
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R67
+U 1 1 586D639C
+P 9440 4580
+F 0 "R67" V 9520 4580 50  0000 C CNN
+F 1 "R" V 9440 4580 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9370 4580 50  0001 C CNN
+F 3 "" H 9440 4580 50  0000 C CNN
+	1    9440 4580
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R70
+U 1 1 586D63A2
+P 9440 4955
+F 0 "R70" V 9520 4955 50  0000 C CNN
+F 1 "R" V 9440 4955 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9370 4955 50  0001 C CNN
+F 3 "" H 9440 4955 50  0000 C CNN
+	1    9440 4955
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q6
+U 1 1 586D6443
+P 5595 5805
+F 0 "Q6" H 5795 5880 50  0000 L CNN
+F 1 "2SC1815" H 5795 5805 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide_Oval_Reverse" H 5795 5730 50  0001 L CIN
+F 3 "" H 5595 5805 50  0000 L CNN
+	1    5595 5805
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D51
+U 1 1 586D6449
+P 5325 5520
+F 0 "D51" H 5325 5620 50  0000 C CNN
+F 1 "ZENER" H 5325 5420 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P10.16mm_Horizontal" H 5325 5520 50  0001 C CNN
+F 3 "" H 5325 5520 50  0000 C CNN
+	1    5325 5520
+	0    1    1    0   
+$EndComp
+$Comp
+L R R81
+U 1 1 586D644F
+P 5325 5105
+F 0 "R81" V 5405 5105 50  0000 C CNN
+F 1 "R" V 5325 5105 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5255 5105 50  0001 C CNN
+F 3 "" H 5325 5105 50  0000 C CNN
+	1    5325 5105
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R94
+U 1 1 586D6455
+P 5325 6010
+F 0 "R94" V 5405 6010 50  0000 C CNN
+F 1 "R" V 5325 6010 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5255 6010 50  0001 C CNN
+F 3 "" H 5325 6010 50  0000 C CNN
+	1    5325 6010
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R82
+U 1 1 586D645B
+P 5695 5105
+F 0 "R82" V 5775 5105 50  0000 C CNN
+F 1 "R" V 5695 5105 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5625 5105 50  0001 C CNN
+F 3 "" H 5695 5105 50  0000 C CNN
+	1    5695 5105
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 587190C4
+P 7725 6915
+F 0 "#PWR01" H 7725 6665 50  0001 C CNN
+F 1 "GND" H 7725 6765 50  0000 C CNN
+F 2 "" H 7725 6915 50  0000 C CNN
+F 3 "" H 7725 6915 50  0000 C CNN
+	1    7725 6915
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5872843E
+P 7625 3655
+F 0 "#PWR03" H 7625 3405 50  0001 C CNN
+F 1 "GND" H 7625 3505 50  0000 C CNN
+F 2 "" H 7625 3655 50  0000 C CNN
+F 3 "" H 7625 3655 50  0000 C CNN
+	1    7625 3655
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P12
+U 1 1 588F98C3
+P 3820 4255
+F 0 "P12" H 3820 4405 50  0000 C CNN
+F 1 "POWER" V 3920 4255 50  0000 C CNN
+F 2 "Connect:bornier2" H 3820 4255 50  0001 C CNN
+F 3 "" H 3820 4255 50  0000 C CNN
+	1    3820 4255
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM2576 D5
+U 1 1 58D78A87
+P 6530 7375
+F 0 "D5" H 7395 7850 60  0000 C CNN
+F 1 "LM2576" H 6920 7815 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1" H 6530 7375 60  0001 C CNN
+F 3 "" H 6530 7375 60  0000 C CNN
+	1    6530 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C6
+U 1 1 58D78A8D
+P 6175 8080
+F 0 "C6" H 6200 8180 50  0000 L CNN
+F 1 "CP" H 6200 7980 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 6213 7930 50  0001 C CNN
+F 3 "" H 6175 8080 50  0000 C CNN
+	1    6175 8080
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C8
+U 1 1 58D78A93
+P 8215 8100
+F 0 "C8" H 8240 8200 50  0000 L CNN
+F 1 "CP" H 8240 8000 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 8253 7950 50  0001 C CNN
+F 3 "" H 8215 8100 50  0000 C CNN
+	1    8215 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L4
+U 1 1 58D78A99
+P 7855 7890
+F 0 "L4" V 7805 7890 50  0000 C CNN
+F 1 "INDUCTOR" V 7955 7890 50  0000 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_8x16mm_Vertical" H 7855 7890 50  0001 C CNN
+F 3 "" H 7855 7890 50  0000 C CNN
+	1    7855 7890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky D8
+U 1 1 58D78A9F
+P 6815 8100
+F 0 "D8" H 6815 8200 50  0000 C CNN
+F 1 "D_Schottky" H 6815 8000 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-201AD_P15.24mm_Horizontal" H 6815 8100 50  0001 C CNN
+F 3 "" H 6815 8100 50  0000 C CNN
+	1    6815 8100
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-Powerbank_Automative P3
+U 1 1 58D78AA5
+P 10190 7810
+F 0 "P3" H 10390 7610 50  0000 C CNN
+F 1 "USB_A" H 10140 8010 50  0000 C CNN
+F 2 "Connect:USB_A" V 10140 7710 50  0001 C CNN
+F 3 "" V 10140 7710 50  0000 C CNN
+	1    10190 7810
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 58D78AAB
+P 8620 7625
+F 0 "R9" V 8700 7625 50  0000 C CNN
+F 1 "R" V 8620 7625 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8550 7625 50  0001 C CNN
+F 3 "" H 8620 7625 50  0000 C CNN
+	1    8620 7625
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 58D78AB1
+P 8620 8000
+F 0 "R10" V 8700 8000 50  0000 C CNN
+F 1 "R" V 8620 8000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8550 8000 50  0001 C CNN
+F 3 "" H 8620 8000 50  0000 C CNN
+	1    8620 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 58D78AB7
+P 9385 7590
+F 0 "R16" V 9465 7590 50  0000 C CNN
+F 1 "R" V 9385 7590 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9315 7590 50  0001 C CNN
+F 3 "" H 9385 7590 50  0000 C CNN
+	1    9385 7590
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 58D78ABD
+P 9385 7965
+F 0 "R17" V 9465 7965 50  0000 C CNN
+F 1 "R" V 9385 7965 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9315 7965 50  0001 C CNN
+F 3 "" H 9385 7965 50  0000 C CNN
+	1    9385 7965
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 58D78AC3
+P 9560 7590
+F 0 "R20" V 9640 7590 50  0000 C CNN
+F 1 "R" V 9560 7590 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9490 7590 50  0001 C CNN
+F 3 "" H 9560 7590 50  0000 C CNN
+	1    9560 7590
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 58D78AC9
+P 9560 7965
+F 0 "R26" V 9640 7965 50  0000 C CNN
+F 1 "R" V 9560 7965 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9490 7965 50  0001 C CNN
+F 3 "" H 9560 7965 50  0000 C CNN
+	1    9560 7965
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q2
+U 1 1 58D78ACF
+P 5715 8815
+F 0 "Q2" H 5915 8890 50  0000 L CNN
+F 1 "2SC1815" H 5915 8815 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide_Oval_Reverse" H 5915 8740 50  0001 L CIN
+F 3 "" H 5715 8815 50  0000 L CNN
+	1    5715 8815
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D3
+U 1 1 58D78AD5
+P 5445 8530
+F 0 "D3" H 5445 8630 50  0000 C CNN
+F 1 "ZENER" H 5445 8430 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P10.16mm_Horizontal" H 5445 8530 50  0001 C CNN
+F 3 "" H 5445 8530 50  0000 C CNN
+	1    5445 8530
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 58D78ADB
+P 5445 8115
+F 0 "R3" V 5525 8115 50  0000 C CNN
+F 1 "15k" V 5445 8115 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5375 8115 50  0001 C CNN
+F 3 "" H 5445 8115 50  0000 C CNN
+	1    5445 8115
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58D78AE1
+P 5445 9020
+F 0 "R4" V 5525 9020 50  0000 C CNN
+F 1 "15k" V 5445 9020 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5375 9020 50  0001 C CNN
+F 3 "" H 5445 9020 50  0000 C CNN
+	1    5445 9020
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 58D78AE7
+P 5815 8115
+F 0 "R6" V 5895 8115 50  0000 C CNN
+F 1 "R" V 5815 8115 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5745 8115 50  0001 C CNN
+F 3 "" H 5815 8115 50  0000 C CNN
+	1    5815 8115
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2576 D4
+U 1 1 58D78AED
+P 6410 10620
+F 0 "D4" H 7275 11095 60  0000 C CNN
+F 1 "LM2576" H 6800 11060 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1" H 6410 10620 60  0001 C CNN
+F 3 "" H 6410 10620 60  0000 C CNN
+	1    6410 10620
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 58D78AF3
+P 6055 11325
+F 0 "C5" H 6080 11425 50  0000 L CNN
+F 1 "CP" H 6080 11225 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 6093 11175 50  0001 C CNN
+F 3 "" H 6055 11325 50  0000 C CNN
+	1    6055 11325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C7
+U 1 1 58D78AF9
+P 8095 11345
+F 0 "C7" H 8120 11445 50  0000 L CNN
+F 1 "CP" H 8120 11245 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 8133 11195 50  0001 C CNN
+F 3 "" H 8095 11345 50  0000 C CNN
+	1    8095 11345
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L3
+U 1 1 58D78AFF
+P 7735 11135
+F 0 "L3" V 7685 11135 50  0000 C CNN
+F 1 "INDUCTOR" V 7835 11135 50  0000 C CNN
+F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_8x16mm_Vertical" H 7735 11135 50  0001 C CNN
+F 3 "" H 7735 11135 50  0000 C CNN
+	1    7735 11135
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky D6
+U 1 1 58D78B05
+P 6695 11345
+F 0 "D6" H 6695 11445 50  0000 C CNN
+F 1 "D_Schottky" H 6695 11245 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-201AD_P15.24mm_Horizontal" H 6695 11345 50  0001 C CNN
+F 3 "" H 6695 11345 50  0000 C CNN
+	1    6695 11345
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A-RESCUE-Powerbank_Automative P2
+U 1 1 58D78B0B
+P 10070 11055
+F 0 "P2" H 10270 10855 50  0000 C CNN
+F 1 "USB_A" H 10020 11255 50  0000 C CNN
+F 2 "Connect:USB_A" V 10020 10955 50  0001 C CNN
+F 3 "" V 10020 10955 50  0000 C CNN
+	1    10070 11055
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 58D78B11
+P 8500 10870
+F 0 "R7" V 8580 10870 50  0000 C CNN
+F 1 "R" V 8500 10870 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8430 10870 50  0001 C CNN
+F 3 "" H 8500 10870 50  0000 C CNN
+	1    8500 10870
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 58D78B17
+P 8500 11245
+F 0 "R8" V 8580 11245 50  0000 C CNN
+F 1 "R" V 8500 11245 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 8430 11245 50  0001 C CNN
+F 3 "" H 8500 11245 50  0000 C CNN
+	1    8500 11245
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 58D78B1D
+P 9265 10835
+F 0 "R14" V 9345 10835 50  0000 C CNN
+F 1 "R" V 9265 10835 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9195 10835 50  0001 C CNN
+F 3 "" H 9265 10835 50  0000 C CNN
+	1    9265 10835
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 58D78B23
+P 9265 11210
+F 0 "R15" V 9345 11210 50  0000 C CNN
+F 1 "R" V 9265 11210 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9195 11210 50  0001 C CNN
+F 3 "" H 9265 11210 50  0000 C CNN
+	1    9265 11210
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 58D78B29
+P 9440 10835
+F 0 "R18" V 9520 10835 50  0000 C CNN
+F 1 "R" V 9440 10835 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9370 10835 50  0001 C CNN
+F 3 "" H 9440 10835 50  0000 C CNN
+	1    9440 10835
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 58D78B2F
+P 9440 11210
+F 0 "R19" V 9520 11210 50  0000 C CNN
+F 1 "R" V 9440 11210 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 9370 11210 50  0001 C CNN
+F 3 "" H 9440 11210 50  0000 C CNN
+	1    9440 11210
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q1
+U 1 1 58D78B35
+P 5595 12060
+F 0 "Q1" H 5795 12135 50  0000 L CNN
+F 1 "2SC1815" H 5795 12060 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide_Oval_Reverse" H 5795 11985 50  0001 L CIN
+F 3 "" H 5595 12060 50  0000 L CNN
+	1    5595 12060
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D2
+U 1 1 58D78B3B
+P 5325 11775
+F 0 "D2" H 5325 11875 50  0000 C CNN
+F 1 "ZENER" H 5325 11675 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P10.16mm_Horizontal" H 5325 11775 50  0001 C CNN
+F 3 "" H 5325 11775 50  0000 C CNN
+	1    5325 11775
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 58D78B41
+P 5325 11360
+F 0 "R1" V 5405 11360 50  0000 C CNN
+F 1 "R" V 5325 11360 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5255 11360 50  0001 C CNN
+F 3 "" H 5325 11360 50  0000 C CNN
+	1    5325 11360
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58D78B47
+P 5325 12265
+F 0 "R2" V 5405 12265 50  0000 C CNN
+F 1 "R" V 5325 12265 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5255 12265 50  0001 C CNN
+F 3 "" H 5325 12265 50  0000 C CNN
+	1    5325 12265
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58D78B4D
+P 5695 11360
+F 0 "R5" V 5775 11360 50  0000 C CNN
+F 1 "R" V 5695 11360 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5625 11360 50  0001 C CNN
+F 3 "" H 5695 11360 50  0000 C CNN
+	1    5695 11360
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58D78C10
+P 7725 13170
+F 0 "#PWR04" H 7725 12920 50  0001 C CNN
+F 1 "GND" H 7725 13020 50  0000 C CNN
+F 2 "" H 7725 13170 50  0000 C CNN
+F 3 "" H 7725 13170 50  0000 C CNN
+	1    7725 13170
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 58D78C1E
+P 7625 9910
+F 0 "#PWR05" H 7625 9660 50  0001 C CNN
+F 1 "GND" H 7625 9760 50  0000 C CNN
+F 2 "" H 7625 9910 50  0000 C CNN
+F 3 "" H 7625 9910 50  0000 C CNN
+	1    7625 9910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6690 1595 6690 1320
+Wire Wire Line
+	6175 1595 6175 1675
+Wire Wire Line
+	6930 2045 6930 1320
+Wire Wire Line
+	6175 1975 6175 2045
+Wire Wire Line
+	6815 2045 6815 1995
+Wire Wire Line
+	6815 1320 6815 1695
+Wire Wire Line
+	6815 1635 7555 1635
+Connection ~ 6815 1635
+Wire Wire Line
+	8620 1520 8620 1595
+Wire Wire Line
+	9385 1485 9385 1560
+Wire Wire Line
+	9560 1485 9560 1560
+Wire Wire Line
+	9385 1090 9385 1185
+Wire Wire Line
+	8215 1090 9890 1090
+Wire Wire Line
+	9560 1090 9560 1185
+Connection ~ 9560 1090
+Wire Wire Line
+	9890 1455 9700 1455
+Wire Wire Line
+	9700 1455 9700 1505
+Wire Wire Line
+	9700 1505 9385 1505
+Connection ~ 9385 1505
+Wire Wire Line
+	9755 1555 9890 1555
+Wire Wire Line
+	8155 1635 8215 1635
+Wire Wire Line
+	8215 1090 8215 1695
+Wire Wire Line
+	6175 2045 10290 2045
+Connection ~ 6815 2045
+Wire Wire Line
+	8215 2045 8215 1995
+Connection ~ 6930 2045
+Connection ~ 8215 2045
+Wire Wire Line
+	8620 1090 8620 1220
+Connection ~ 8215 1635
+Wire Wire Line
+	8460 1560 8620 1560
+Connection ~ 8620 1560
+Wire Wire Line
+	9385 2045 9385 1860
+Wire Wire Line
+	9560 2045 9560 1860
+Connection ~ 9385 2045
+Connection ~ 9560 2045
+Connection ~ 9385 1090
+Wire Wire Line
+	8460 2470 8460 1560
+Wire Wire Line
+	7050 2470 8460 2470
+Wire Wire Line
+	6295 3580 6295 2045
+Connection ~ 6295 2045
+Connection ~ 8620 1090
+Wire Wire Line
+	5445 2075 5445 2010
+Wire Wire Line
+	5445 1710 5445 1675
+Wire Wire Line
+	5445 1675 5815 1675
+Wire Wire Line
+	5815 1675 5815 1710
+Wire Wire Line
+	5815 2010 5815 2360
+Wire Wire Line
+	5445 2475 5445 2615
+Wire Wire Line
+	5515 2560 5445 2560
+Connection ~ 5445 2560
+Wire Wire Line
+	5445 2915 5445 2995
+Wire Wire Line
+	5445 2995 5815 2995
+Wire Wire Line
+	5815 2995 5815 2760
+Wire Wire Line
+	5630 1675 5630 1595
+Connection ~ 5630 1675
+Wire Wire Line
+	5635 2995 5635 3580
+Connection ~ 6295 3580
+Connection ~ 5635 2995
+Wire Wire Line
+	5815 2185 6000 2185
+Wire Wire Line
+	6000 2185 6000 1470
+Wire Wire Line
+	6000 1470 7180 1470
+Wire Wire Line
+	7180 1470 7180 1320
+Connection ~ 5815 2185
+Wire Wire Line
+	6570 4840 6570 4565
+Wire Wire Line
+	5170 4840 6570 4840
+Wire Wire Line
+	6055 4840 6055 4920
+Wire Wire Line
+	6810 5290 6810 4565
+Wire Wire Line
+	6055 5220 6055 5290
+Wire Wire Line
+	6695 5290 6695 5240
+Wire Wire Line
+	6695 4565 6695 4940
+Wire Wire Line
+	6695 4880 7435 4880
+Connection ~ 6695 4880
+Wire Wire Line
+	8500 4765 8500 4840
+Wire Wire Line
+	9265 4730 9265 4805
+Wire Wire Line
+	9440 4730 9440 4805
+Wire Wire Line
+	10170 5290 10170 5100
+Wire Wire Line
+	9265 4335 9265 4430
+Wire Wire Line
+	8095 4335 9770 4335
+Wire Wire Line
+	9440 4335 9440 4430
+Connection ~ 9440 4335
+Wire Wire Line
+	9770 4700 9580 4700
+Wire Wire Line
+	9580 4700 9580 4750
+Wire Wire Line
+	9580 4750 9265 4750
+Connection ~ 9265 4750
+Connection ~ 9440 4780
+Wire Wire Line
+	9440 4780 9685 4780
+Wire Wire Line
+	9770 4800 9685 4800
+Wire Wire Line
+	8035 4880 8095 4880
+Wire Wire Line
+	8095 4335 8095 4940
+Wire Wire Line
+	6055 5290 9445 5290
+Connection ~ 6695 5290
+Wire Wire Line
+	8095 5290 8095 5240
+Connection ~ 6810 5290
+Connection ~ 8095 5290
+Wire Wire Line
+	8500 4335 8500 4465
+Connection ~ 8095 4880
+Wire Wire Line
+	8340 4805 8500 4805
+Connection ~ 8500 4805
+Wire Wire Line
+	9265 5290 9265 5105
+Wire Wire Line
+	9440 5290 9440 5105
+Connection ~ 9265 5290
+Connection ~ 9440 5290
+Connection ~ 9265 4335
+Wire Wire Line
+	6175 6825 6175 5290
+Connection ~ 6175 5290
+Connection ~ 8500 4335
+Wire Wire Line
+	5325 5320 5325 5255
+Wire Wire Line
+	5325 4955 5325 4920
+Wire Wire Line
+	5325 4920 5695 4920
+Wire Wire Line
+	5695 4920 5695 4955
+Wire Wire Line
+	5695 5255 5695 5605
+Wire Wire Line
+	5325 5720 5325 5860
+Wire Wire Line
+	5395 5805 5325 5805
+Connection ~ 5325 5805
+Wire Wire Line
+	5325 6160 5325 6240
+Wire Wire Line
+	5325 6240 5695 6240
+Wire Wire Line
+	5695 6240 5695 6005
+Connection ~ 6055 4840
+Wire Wire Line
+	5510 4920 5510 4840
+Connection ~ 5510 4920
+Wire Wire Line
+	5515 6240 5515 6825
+Connection ~ 6175 6825
+Connection ~ 5515 6240
+Wire Wire Line
+	5695 5430 5880 5430
+Wire Wire Line
+	5880 5430 5880 4715
+Wire Wire Line
+	5880 4715 7060 4715
+Wire Wire Line
+	7060 4715 7060 4565
+Connection ~ 5695 5430
+Connection ~ 5515 6825
+Connection ~ 5635 3580
+Wire Wire Line
+	10290 2045 10290 1855
+Wire Wire Line
+	9440 5290 10170 5290
+Wire Wire Line
+	9890 1655 9790 1655
+Wire Wire Line
+	9790 1655 9790 2045
+Connection ~ 9790 2045
+Wire Wire Line
+	9770 4900 9690 4900
+Wire Wire Line
+	9690 4900 9690 5290
+Connection ~ 9690 5290
+Wire Wire Line
+	9890 1090 9890 1355
+Wire Wire Line
+	9770 4335 9770 4600
+Wire Wire Line
+	4020 4205 4685 4205
+Connection ~ 4685 4205
+Connection ~ 4875 4305
+Wire Wire Line
+	7725 6825 7725 6915
+Wire Wire Line
+	7625 3580 7625 3655
+Wire Wire Line
+	7050 2470 7050 1320
+Wire Wire Line
+	8620 1895 8620 2045
+Connection ~ 8620 2045
+Wire Wire Line
+	4875 3580 7625 3580
+Wire Wire Line
+	4875 6825 7725 6825
+Wire Wire Line
+	8500 5140 8500 5290
+Connection ~ 8500 5290
+Wire Wire Line
+	8340 4805 8340 5690
+Wire Wire Line
+	8340 5690 6930 5690
+Wire Wire Line
+	6930 5690 6930 4565
+Wire Wire Line
+	4685 1595 4685 11095
+Wire Wire Line
+	6690 7850 6690 7575
+Wire Wire Line
+	6175 7850 6175 7930
+Wire Wire Line
+	6930 8300 6930 7575
+Wire Wire Line
+	6175 8230 6175 8300
+Wire Wire Line
+	6815 8300 6815 8250
+Wire Wire Line
+	6815 7575 6815 7950
+Wire Wire Line
+	6815 7890 7555 7890
+Connection ~ 6815 7890
+Wire Wire Line
+	8620 7775 8620 7850
+Wire Wire Line
+	9385 7740 9385 7815
+Wire Wire Line
+	9560 7740 9560 7815
+Wire Wire Line
+	9385 7345 9385 7440
+Wire Wire Line
+	8215 7345 9890 7345
+Wire Wire Line
+	9560 7345 9560 7440
+Connection ~ 9560 7345
+Wire Wire Line
+	9890 7710 9700 7710
+Wire Wire Line
+	9700 7710 9700 7760
+Wire Wire Line
+	9700 7760 9385 7760
+Connection ~ 9385 7760
+Connection ~ 9560 7790
+Wire Wire Line
+	9560 7790 9805 7790
+Wire Wire Line
+	9890 7810 9805 7810
+Wire Wire Line
+	8155 7890 8215 7890
+Wire Wire Line
+	8215 7345 8215 7950
+Wire Wire Line
+	6175 8300 10290 8300
+Connection ~ 6815 8300
+Wire Wire Line
+	8215 8300 8215 8250
+Connection ~ 6930 8300
+Connection ~ 8215 8300
+Wire Wire Line
+	8620 7345 8620 7475
+Connection ~ 8215 7890
+Wire Wire Line
+	8460 7815 8620 7815
+Connection ~ 8620 7815
+Wire Wire Line
+	9385 8300 9385 8115
+Wire Wire Line
+	9560 8300 9560 8115
+Connection ~ 9385 8300
+Connection ~ 9560 8300
+Connection ~ 9385 7345
+Wire Wire Line
+	8460 8725 8460 7815
+Wire Wire Line
+	7050 8725 8460 8725
+Wire Wire Line
+	6295 9835 6295 8300
+Connection ~ 6295 8300
+Connection ~ 8620 7345
+Wire Wire Line
+	5445 8330 5445 8265
+Wire Wire Line
+	5445 7965 5445 7930
+Wire Wire Line
+	5445 7930 5815 7930
+Wire Wire Line
+	5815 7930 5815 7965
+Wire Wire Line
+	5815 8265 5815 8615
+Wire Wire Line
+	5445 8730 5445 8870
+Wire Wire Line
+	5515 8815 5445 8815
+Connection ~ 5445 8815
+Wire Wire Line
+	5445 9170 5445 9250
+Wire Wire Line
+	5445 9250 5815 9250
+Wire Wire Line
+	5815 9250 5815 9015
+Wire Wire Line
+	5630 7930 5630 7850
+Connection ~ 5630 7930
+Wire Wire Line
+	5635 9250 5635 9835
+Connection ~ 6295 9835
+Connection ~ 5635 9250
+Wire Wire Line
+	5815 8440 6000 8440
+Wire Wire Line
+	6000 8440 6000 7725
+Wire Wire Line
+	6000 7725 7180 7725
+Wire Wire Line
+	7180 7725 7180 7575
+Connection ~ 5815 8440
+Wire Wire Line
+	6570 11095 6570 10820
+Wire Wire Line
+	5200 11095 6570 11095
+Wire Wire Line
+	6055 11095 6055 11175
+Wire Wire Line
+	6810 11545 6810 10820
+Wire Wire Line
+	6055 11475 6055 11545
+Wire Wire Line
+	6695 11545 6695 11495
+Wire Wire Line
+	6695 10820 6695 11195
+Wire Wire Line
+	6695 11135 7435 11135
+Connection ~ 6695 11135
+Wire Wire Line
+	8500 11020 8500 11095
+Wire Wire Line
+	9265 10985 9265 11060
+Wire Wire Line
+	9440 10985 9440 11060
+Wire Wire Line
+	10170 11545 10170 11355
+Wire Wire Line
+	9265 10590 9265 10685
+Wire Wire Line
+	8095 10590 9770 10590
+Wire Wire Line
+	9440 10590 9440 10685
+Connection ~ 9440 10590
+Wire Wire Line
+	9770 10955 9580 10955
+Wire Wire Line
+	9580 10955 9580 11005
+Wire Wire Line
+	9580 11005 9265 11005
+Connection ~ 9265 11005
+Connection ~ 9440 11035
+Wire Wire Line
+	9440 11035 9685 11035
+Wire Wire Line
+	9770 11055 9685 11055
+Wire Wire Line
+	8035 11135 8095 11135
+Wire Wire Line
+	8095 10590 8095 11195
+Wire Wire Line
+	6055 11545 9445 11545
+Connection ~ 6695 11545
+Wire Wire Line
+	8095 11545 8095 11495
+Connection ~ 6810 11545
+Connection ~ 8095 11545
+Wire Wire Line
+	8500 10590 8500 10720
+Connection ~ 8095 11135
+Wire Wire Line
+	8340 11060 8500 11060
+Connection ~ 8500 11060
+Wire Wire Line
+	9265 11545 9265 11360
+Wire Wire Line
+	9440 11545 9440 11360
+Connection ~ 9265 11545
+Connection ~ 9440 11545
+Connection ~ 9265 10590
+Wire Wire Line
+	6175 13080 6175 11545
+Connection ~ 6175 11545
+Connection ~ 8500 10590
+Wire Wire Line
+	5325 11575 5325 11510
+Wire Wire Line
+	5325 11210 5325 11175
+Wire Wire Line
+	5325 11175 5695 11175
+Wire Wire Line
+	5695 11175 5695 11210
+Wire Wire Line
+	5695 11510 5695 11860
+Wire Wire Line
+	5325 11975 5325 12115
+Wire Wire Line
+	5395 12060 5325 12060
+Connection ~ 5325 12060
+Wire Wire Line
+	5325 12415 5325 12495
+Wire Wire Line
+	5325 12495 5695 12495
+Wire Wire Line
+	5695 12495 5695 12260
+Connection ~ 6055 11095
+Wire Wire Line
+	5510 11175 5510 11095
+Connection ~ 5510 11175
+Wire Wire Line
+	5515 12495 5515 13080
+Connection ~ 6175 13080
+Connection ~ 5515 12495
+Wire Wire Line
+	5695 11685 5880 11685
+Wire Wire Line
+	5880 11685 5880 10970
+Wire Wire Line
+	5880 10970 7060 10970
+Wire Wire Line
+	7060 10970 7060 10820
+Connection ~ 5695 11685
+Connection ~ 5515 13080
+Connection ~ 5635 9835
+Wire Wire Line
+	10290 8300 10290 8110
+Wire Wire Line
+	9440 11545 10170 11545
+Wire Wire Line
+	9890 7910 9790 7910
+Wire Wire Line
+	9790 7910 9790 8300
+Connection ~ 9790 8300
+Wire Wire Line
+	9770 11155 9690 11155
+Wire Wire Line
+	9690 11155 9690 11545
+Connection ~ 9690 11545
+Wire Wire Line
+	9890 7345 9890 7610
+Wire Wire Line
+	9770 10590 9770 10855
+Wire Wire Line
+	7725 13080 7725 13170
+Wire Wire Line
+	7625 9835 7625 9910
+Wire Wire Line
+	7050 8725 7050 7575
+Wire Wire Line
+	8620 8150 8620 8300
+Connection ~ 8620 8300
+Wire Wire Line
+	4875 9835 7625 9835
+Wire Wire Line
+	4875 13080 7725 13080
+Wire Wire Line
+	8500 11395 8500 11545
+Connection ~ 8500 11545
+Wire Wire Line
+	8340 11060 8340 11945
+Wire Wire Line
+	8340 11945 6930 11945
+Wire Wire Line
+	6930 11945 6930 10820
+Wire Wire Line
+	4875 3580 4875 13080
+Connection ~ 4875 6825
+Connection ~ 4875 9835
+Connection ~ 9560 1535
+Wire Wire Line
+	9755 1555 9755 1535
+Wire Wire Line
+	9755 1535 9560 1535
+Wire Wire Line
+	9805 7810 9805 7790
+Wire Wire Line
+	9685 4800 9685 4780
+Wire Wire Line
+	9685 11055 9685 11035
+$Comp
+L F_Small F2
+U 1 1 59061095
+P 5080 1595
+F 0 "F2" H 5040 1655 50  0000 L CNN
+F 1 "F_Small" H 4960 1535 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_inline_Type-I" H 5080 1595 50  0001 C CNN
+F 3 "" H 5080 1595 50  0000 C CNN
+	1    5080 1595
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F1
+U 1 1 59061D5E
+P 5070 4840
+F 0 "F1" H 5030 4900 50  0000 L CNN
+F 1 "F_Small" H 4950 4780 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_inline_Type-I" H 5070 4840 50  0001 C CNN
+F 3 "" H 5070 4840 50  0000 C CNN
+	1    5070 4840
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F4
+U 1 1 590624DD
+P 5110 7850
+F 0 "F4" H 5070 7910 50  0000 L CNN
+F 1 "F_Small" H 4990 7790 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_inline_Type-I" H 5110 7850 50  0001 C CNN
+F 3 "" H 5110 7850 50  0000 C CNN
+	1    5110 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F3
+U 1 1 59062E8A
+P 5100 11095
+F 0 "F3" H 5060 11155 50  0000 L CNN
+F 1 "F_Small" H 4980 11035 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_inline_Type-I" H 5100 11095 50  0001 C CNN
+F 3 "" H 5100 11095 50  0000 C CNN
+	1    5100 11095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4980 1595 4685 1595
+Connection ~ 5510 4840
+Wire Wire Line
+	4970 4840 4685 4840
+Connection ~ 4685 4840
+Wire Wire Line
+	5010 7850 4685 7850
+Connection ~ 4685 7850
+Wire Wire Line
+	5210 7850 6690 7850
+Connection ~ 5630 7850
+Connection ~ 6175 7850
+Connection ~ 5510 11095
+Wire Wire Line
+	4685 11095 5000 11095
+Wire Wire Line
+	5180 1595 6690 1595
+Connection ~ 6175 1595
+Connection ~ 5630 1595
+Wire Wire Line
+	4020 4305 4875 4305
+$EndSCHEMATC
